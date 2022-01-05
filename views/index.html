@@ -3,7 +3,10 @@
   <head>
     <title>go tiny</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="Go Tiny, Go Anywhere. A URL Shortener." />
+    <meta
+      name="description"
+      content="Go tiny, Go anywhere. Yet another URL shortener."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/app.css" rel="stylesheet" />
   </head>
@@ -14,8 +17,8 @@
         <ul class="flex items-center justify-between">
           <li>
             <a href="/" aria-label="Home">
-              <h1 class="text-2xl md:text-3xl font-bold text-neutral-700">
-                go<span class="text-emerald-400">tiny</span>
+              <h1 class="text-2xl md:text-3xl font-bold">
+                go<span class="text-cyan-300">tiny</span>
               </h1>
             </a>
           </li>
@@ -43,19 +46,37 @@
       </nav>
     </header>
 
-    <div class="flex-1 flex flex-col items-center justify-center">
-      <div class="max-w-2xl px-4 md:px-0 text-center mb-12">
-        <h2 class="text-5xl md:text-8xl font-extrabold mb-12">
+    <div class="flex-1 flex flex-col items-center justify-center text-center">
+      <div class="max-w-2xl px-4 md:px-0 mb-12">
+        <h2 class="text-neutral-700 text-5xl md:text-8xl font-extrabold mb-12">
           Go tiny,<br />
-          <span class="text-emerald-400">go anywhere.</span>
+          <span class="text-cyan-300">go anywhere.</span>
         </h2>
         <h3 class="text-neutral-500 text-3xl md:text-5xl font-medium">
           Yet another URL shortener.
         </h3>
       </div>
 
-      <main class="w-full max-w-md bg-white shadow-xl rounded-lg p-6">
-        hello
+      <main class="w-full max-w-lg bg-white shadow-xl rounded-lg p-8">
+        <h4 class="text-xl md:text-2xl mb-4">Enter a URL to shorten</h4>
+
+        <form class="flex">
+          <label for="url" class="sr-only">URL</label>
+          <input
+            id="url"
+            name="url"
+            type="text"
+            required
+            placeholder="Enter the URL here"
+            class="flex-1 rounded-l-lg border-neutral-400 border-r-0"
+          />
+          <button
+            type="submit"
+            class="bg-cyan-400 text-neutral-50 font-semibold px-6 rounded-r-lg"
+          >
+            Go tiny
+          </button>
+        </form>
       </main>
     </div>
 
