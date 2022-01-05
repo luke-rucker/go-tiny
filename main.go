@@ -12,6 +12,8 @@ func main() {
 		Views: engine,
 	})
 
+	app.Static("/", "./public")
+
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.Render("index", fiber.Map{
 			"Title": "Hello, World!",
