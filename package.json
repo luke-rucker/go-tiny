@@ -2,7 +2,7 @@
   "private": true,
   "name": "go-tiny",
   "version": "1.0.0",
-  "description": "Yet another URL Shortener. Go Tiny, Go Anywhere.",
+  "description": "Yet another URL Shortener. Go tiny, go anywhere.",
   "license": "MIT",
   "scripts": {
     "build:css": "tailwindcss -i ./styles/app.css -o ./public/css/app.css --minify",
